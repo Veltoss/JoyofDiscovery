@@ -41,12 +41,12 @@ export default async function (req: VercelRequest, res: VercelResponse) {
             <meta property="og:title" content="You've minted Joy of Discovery!" />
             <meta
               property="og:image"
-              content="https://syndicate-farcaster-frame-starter.vercel.app/img/example-frame-farcaster-cropped-minted.png"
+              content="https://raw.githubusercontent.com/Veltoss/JoyofDiscovery/main/joyofdiscoverythumbnail3.png"
             />
             <meta property="fc:frame" content="vNext" />
             <meta
               property="fc:frame:image"
-              content="https://syndicate-farcaster-frame-starter.vercel.app/img/example-frame-farcaster-cropped-minted.png"
+              content="https://raw.githubusercontent.com/Veltoss/JoyofDiscovery/main/joyofdiscoverythumbnail3.png"
             />
             <meta
               property="fc:frame:button:1"
@@ -71,12 +71,12 @@ export default async function (req: VercelRequest, res: VercelResponse) {
         <meta property="og:title" content="Mint Joy of Discovery for free!" />
         <meta
           property="og:image"
-          content="https://syndicate-farcaster-frame-starter.vercel.app/img/example-frame-farcaster-cropped.png"
+          content="https://raw.githubusercontent.com/Veltoss/JoyofDiscovery/main/joyofdiscoverythumbnail3.png"
         />
         <meta property="fc:frame" content="vNext" />
         <meta
           property="fc:frame:image"
-          content="https://syndicate-farcaster-frame-starter.vercel.app/img/example-frame-farcaster-cropped.png"
+          content="https://raw.githubusercontent.com/Veltoss/JoyofDiscovery/main/joyofdiscoverythumbnail3.png"
         />
         <meta property="fc:frame:button:1" content="Mint Now" />
         <meta
