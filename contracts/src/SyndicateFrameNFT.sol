@@ -8,6 +8,7 @@ import {ERC721} from "../lib/openzeppelin-contracts/contracts/token/ERC721//ERC7
 import {Ownable} from "../lib/openzeppelin-contracts/contracts/access/Ownable.sol";
 
 contract SyndicateFrameNFT is ERC721, Ownable {
+	uint256 public constant MINT_CUTOFF_TIMESTAMP = 1706936400;
     uint256 public currentTokenId = 0;
     string public defaultURI;
 
@@ -42,9 +43,9 @@ contract SyndicateFrameNFT is ERC721, Ownable {
     // The deployer is set as the initial owner by default. Make sure to
     // transfer this to a Safe or other multisig for long-term use!
     // You can call `transferOwnership` to do this.
-    constructor() ERC721("SyndicateFrameNFT", "SYNFRAME") Ownable(msg.sender) {
+    constructor() ERC721("Joy of Discovery", "JOYODIS") Ownable(msg.sender) {
         // Update this with your own NFT collection's metadata
-        defaultURI = "ipfs://QmSFqezaUhBKr32Z2vgFrbDPGYdbcj8zQcQvsDqbU6b6UH";
+        defaultURI = "ipfs://bafkreicmleih5iu73vdfbf5vwg3cm5btwq5ptfzfqjbkslkw5s2zkrhjfy";
         maxMintPerAddress = 1;
 
         // The deployer is set as an authorized minter, allowing them to set up
@@ -68,6 +69,7 @@ contract SyndicateFrameNFT is ERC721, Ownable {
     // This function is not yet supported in the frame.syndicate.io API
     // We will update this example repository when it is supported!
     function mint(address to, string memory _tokenURI) public onlyAuthorizedMinter onlyBelowMaxMint(to) {
+		require(block.timestamp <= MINT_CUTOFF_TIMESTAMP, "Minting period has ended");
         ++currentTokenId;
         ++mintCount[to];
         tokenURIs[currentTokenId] = _tokenURI;
