@@ -38,7 +38,7 @@ export default async function (req: VercelRequest, res: VercelResponse) {
           <head>
             <meta charset="utf-8" />
             <meta name="viewport" content="width=device-width" />
-            <meta property="og:title" content="You've minted your commemorative NFT for Syndicate's Frame API!" />
+            <meta property="og:title" content="You've minted Joy of Discovery!" />
             <meta
               property="og:image"
               content="https://syndicate-farcaster-frame-starter.vercel.app/img/example-frame-farcaster-cropped-minted.png"
@@ -50,7 +50,7 @@ export default async function (req: VercelRequest, res: VercelResponse) {
             />
             <meta
               property="fc:frame:button:1"
-              content="You've minted your frame.syndicate.io commemorative NFT!"
+              content="You've minted Joy of Discovery!"
             />
           </head>
         </html>
@@ -68,7 +68,7 @@ export default async function (req: VercelRequest, res: VercelResponse) {
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
-        <meta property="og:title" content="Mint your commemorative NFT for the launch of Syndicate's Frame API!" />
+        <meta property="og:title" content="Mint Joy of Discovery for free!" />
         <meta
           property="og:image"
           content="https://syndicate-farcaster-frame-starter.vercel.app/img/example-frame-farcaster-cropped.png"
@@ -78,7 +78,7 @@ export default async function (req: VercelRequest, res: VercelResponse) {
           property="fc:frame:image"
           content="https://syndicate-farcaster-frame-starter.vercel.app/img/example-frame-farcaster-cropped.png"
         />
-        <meta property="fc:frame:button:1" content="Mint your commemorative frame.syndicate.io NFT!" />
+        <meta property="fc:frame:button:1" content="Mint Now" />
         <meta
           name="fc:frame:post_url"
           content="https://syndicate-farcaster-frame-starter.vercel.app/api/syndicate-farcaster-frame-starter"
